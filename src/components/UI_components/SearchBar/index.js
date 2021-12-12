@@ -10,6 +10,10 @@ import { setCity } from '../../../store/actions';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        '& > *': {
+            margin: 'auto',
+            width: '22ch'
+        },
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
                 borderRadius: `5em`
@@ -56,7 +60,7 @@ const SearchBar= props =>{
     };
 
     return (
-        <form  style={{margin: 'auto' }}  noValidate autoComplete="off">
+        <form className={classes.root}  noValidate autoComplete="off">
             <Autocomplete
                 id="asynchronous-demo"
                 className={classes.searchField}
