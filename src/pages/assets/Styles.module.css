@@ -1,0 +1,14 @@
+
+.searchBar{
+  position: relative;
+  top:80px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px ;
+
+}
+
+.gridBox{
+  /* //position: relative; */
+  margin-top:14vh;
+}
